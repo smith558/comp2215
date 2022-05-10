@@ -11,7 +11,7 @@ pico_sdk_init()
 include_directories(${CMAKE_SOURCE_DIR})
 
 add_executable(HelloWorld
-  HelloWorld.S
+  hello.S
 )
 
 pico_enable_stdio_uart(HelloWorld 1)
