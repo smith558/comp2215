@@ -1,6 +1,5 @@
 @
-@ Assembler program print out "Hello World"
-@ using the Pico SDK.
+@ Assembler program print out "Hello World" using the Pico SDK.
 @
 @ R0 - first parameter to printf
 @ R1 - second parameter to printer
@@ -15,8 +14,8 @@ main:
 	BL	stdio_init_all	@ initialize uart or usb
 loop:
 	LDR	R0, =helloworld	@ load address of helloworld string
-	ADD	R7, #1		@ Increment counter
-	MOV	R1, R7		@ Move the counter to second parameter
+	@ complete the code HERE (increment counter)
+	@ complete the code HERE (move the counter to second parameter)
 	BL	printf		@ Call pico_printf
 	B	loop		@ loop forever
 		
